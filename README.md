@@ -24,7 +24,7 @@ The Jupiter API is able to be self-hosted. The assignment modules are powered by
 
 ### Current Self-Hosting Guide
 1. Clone and `cd` into the repository directory
-2. Setup a virtual environment in the root directory using `virtualenv`
+2. Setup a virtual environment in the root directory using `python3 -m venv ./venv` (creates a virtual environment in the `./venv` directory)
 3. Make sure you install the required dependencies (for now, just FastAPI)
 4. Run the `main.py` file in the root directory. This will open a webserver on http://localhost:8000. The server is running using uvicorn (core dependency of FastAPI), so the port is easily modifiable in the dunder main (`__main__`) statement at the bottom of the `main.py` file
    - The server can also be run in the console by using the command: `uvicorn main:app --reload`. The `--reload` flag allows for on-save reload
