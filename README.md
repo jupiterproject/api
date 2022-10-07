@@ -33,4 +33,5 @@ The Jupiter API is able to be self-hosted. The assignment modules are powered by
 We have the following features planned for the Jupiter API. Checked off items are completed (but you knew that, hopefully).
 - [x] Setup boilerplate project with FastAPI fetching sample data to test API endpoints
 - [ ] Connect Google Classroom API
+- [ ] Setup project with MongoDB (`pymongo` module)
 - [ ] Create API endpoints to access schedules (and other GC API information)
