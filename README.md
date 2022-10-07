@@ -19,7 +19,7 @@ Yes, that's right. It doesn't use GraphQL, because that would be considered goin
 
 
 ## 🖥️ Self-Hosting
-The Jupiter API is able to be self-hosted. It is powered all by the Google Classroom API.
+The Jupiter API is able to be self-hosted. The assignment modules are powered by the **Google Classroom API**.
 > **Note**: The API is not completed yet, meaning you should not try using it (obviously). This also means that the self-hosting guide is subject to change.
 
 ### Current Self-Hosting Guide
