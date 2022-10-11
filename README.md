@@ -19,12 +19,12 @@ Yes, that's right. It doesn't use GraphQL, because that would be considered goin
 
 
 ## 🖥️ Self-Hosting
-The Jupiter API is able to be self-hosted. It is powered all by the Google Classroom API.
+The Jupiter API is able to be self-hosted. The assignment modules are powered by the **Google Classroom API**.
 > **Note**: The API is not completed yet, meaning you should not try using it (obviously). This also means that the self-hosting guide is subject to change.
 
 ### Current Self-Hosting Guide
 1. Clone and `cd` into the repository directory
-2. Setup a virtual environment in the root directory using `virtualenv`
+2. Setup a virtual environment in the root directory using `python3 -m venv ./venv` (creates a virtual environment in the `./venv` directory)
 3. Make sure you install the required dependencies (for now, just FastAPI)
 4. Run the `main.py` file in the root directory. This will open a webserver on http://localhost:8000. The server is running using uvicorn (core dependency of FastAPI), so the port is easily modifiable in the dunder main (`__main__`) statement at the bottom of the `main.py` file
    - The server can also be run in the console by using the command: `uvicorn main:app --reload`. The `--reload` flag allows for on-save reload
@@ -33,4 +33,5 @@ The Jupiter API is able to be self-hosted. It is powered all by the Google Class
 We have the following features planned for the Jupiter API. Checked off items are completed (but you knew that, hopefully).
 - [x] Setup boilerplate project with FastAPI fetching sample data to test API endpoints
 - [ ] Connect Google Classroom API
+- [ ] Setup project with MongoDB (`pymongo` module)
 - [ ] Create API endpoints to access schedules (and other GC API information)
