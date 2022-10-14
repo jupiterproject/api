@@ -1,6 +1,9 @@
 # 🚀 Jupiter API
 Jupiter API is the API powering Jupiter 🚀. Built by Jupiter (with 💖) for Jupiter.
 
+# 🚧
+This branch is the legacy verison of the Jupiter API and is no longer maintained/supported. Please do not push/make any changes to this repository.
+
 ----
 
 ### 🤔 Wait, what is Jupiter?
