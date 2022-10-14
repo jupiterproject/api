@@ -2,6 +2,9 @@
 
 This is the official repository for the Jupiter API. Please note that the prior Python API **has been deprecated**.
 
+### Legacy Codebase
+The legacy codebase (with FastAPI) can be found underneath the `legacy` branch in this repository.
+
 ## Technologies
 - Express.js
 - TypeScript
