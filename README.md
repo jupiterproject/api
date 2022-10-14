@@ -19,10 +19,10 @@ The documentation is currently under development, please check the [jupiterproje
 ## Todo
 - [x] Setup express
   - [x] OOP routes/controllers
-- [ ] Sync with MongoDB
+- [x] Sync with MongoDB
 - [ ] Google Classroom API - fetching data
   - Build internal wrapper for communication with GC
-- [ ] Create todos
+- [x] Create todos
 - [ ] List all courses
 - [ ] Set course time / Update course time
 - [ ] Delete a course
