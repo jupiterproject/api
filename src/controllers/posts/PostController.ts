@@ -9,7 +9,7 @@ class PostsController {
     {
       author: "Max Schwarz",
       content: "Hello World!",
-      title: "Hello World!",
+      title: "Hello World",
     },
   ];
 

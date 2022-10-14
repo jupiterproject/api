@@ -1,6 +1,8 @@
 import express from "express";
 import * as bodyParser from "body-parser";
 
+import mongoose from "mongoose";
+
 class App {
   public app: express.Application;
   public port: number;
@@ -15,6 +17,7 @@ class App {
 
   private initializeMiddlewares() {
     this.app.use(bodyParser.json());
+    // TODO: Add morgan middleware
   }
 
   private initializeControllers(controllers: any) {
@@ -26,6 +29,12 @@ class App {
   public listen() {
     this.app.listen(this.port, () => {
       console.log(`App is listening on the port ${this.port}!`);
+    });
+  }
+
+  public async mongoInit(url: string) {
+    await mongoose.connect(url).then(() => {
+      console.log(`Connected to database`);
     });
   }
 }
