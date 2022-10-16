@@ -3,20 +3,24 @@
 This is the official repository for the Jupiter API. Please note that the prior Python API **has been deprecated**.
 
 ### Legacy Codebase
+
 The legacy codebase (with FastAPI) can be found underneath the `legacy` branch in this repository.
 
 ## Technologies
+
 - Express.js
 - TypeScript
 - MongoDB
   - AWS running instance
 - Postgres
   - **Currently unsupported**
- 
+
 ## Documentation
+
 The documentation is currently under development, please check the [jupiterproject/api-docs](//github.com/jupiterproject/api-docs) repository for more updates.
 
 ## Todo
+
 - [x] Setup express
   - [x] OOP routes/controllers
 - [x] Sync with MongoDB
@@ -28,11 +32,12 @@ The documentation is currently under development, please check the [jupiterproje
 - [ ] Delete a course
 
 ## Self-Hosting
+
 The self-hosting guide is subject to change. The guide will only include the current steps of self-hosting.
 
 1. Clone and `cd` into the repository
 
-```git clone https://github.com/jupiterapp/api.git jupiter-api && cd jupiter-api```
+`git clone https://github.com/jupiterproject/api.git jupiter-api && cd jupiter-api`
 
 2. Install the required dependencies (the project uses Yarn, and we recommend you do so as well)
 
@@ -61,4 +66,5 @@ node .
 That's it! (For now)
 
 ## Contributing
+
 Outside contributors will not be accepted as of now.
