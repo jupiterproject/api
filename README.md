@@ -27,5 +27,38 @@ The documentation is currently under development, please check the [jupiterproje
 - [ ] Set course time / Update course time
 - [ ] Delete a course
 
+## Self-Hosting
+The self-hosting guide is subject to change. The guide will only include the current steps of self-hosting.
+
+1. Clone and `cd` into the repository
+
+```git clone https://github.com/jupiterapp/api.git jupiter-api && cd jupiter-api```
+
+2. Install the required dependencies (the project uses Yarn, and we recommend you do so as well)
+
+```bash
+yarn
+# or if you prefer npm
+npm install
+```
+
+3. Compile the code
+
+```bash
+tsc
+
+# of if you want to watch the changes
+
+tsc --watch
+```
+
+4. Open a new terminal tab and start the project
+
+```bash
+node .
+```
+
+That's it! (For now)
+
 ## Contributing
 Outside contributors will not be accepted as of now.
