@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import { Todo } from "../../models/Todo";
+import TodoInterface from "./todo.interface";
 
 class TodoController {
   public path = "/todos";
@@ -23,10 +24,12 @@ class TodoController {
   };
 
   createATodo = (request: express.Request, response: express.Response) => {
-    const createdTodo = new Todo({
+    console.log(request.body);
+    const createdTodo: TodoInterface | any = new Todo({
       name: "Some Todo",
       createdAt: "10/14/22",
       subject: "French",
+      createdBy: "johnDoe",
     });
     createdTodo.save();
     response.json(createdTodo);

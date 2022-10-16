@@ -1,5 +1,6 @@
 import express from "express";
 import * as bodyParser from "body-parser";
+import morgan from "morgan";
 
 import mongoose from "mongoose";
 
@@ -16,7 +17,10 @@ class App {
   }
 
   private initializeMiddlewares() {
+    this.app.use(bodyParser.urlencoded({ extended: true }));
+    this.app.use(bodyParser.raw());
     this.app.use(bodyParser.json());
+    this.app.use(morgan("common"));
     // TODO: Add morgan middleware
   }
 

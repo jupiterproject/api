@@ -24,5 +24,9 @@
     "mongoose": "^6.6.5",
     "node-fetch": "^3.2.10",
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/morgan": "^1.9.3",
+    "morgan": "^1.10.0"
   }
 }
