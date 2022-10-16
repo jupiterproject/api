@@ -37,7 +37,9 @@ The self-hosting guide is subject to change. The guide will only include the cur
 
 1. Clone and `cd` into the repository
 
-`git clone https://github.com/jupiterproject/api.git jupiter-api && cd jupiter-api`
+```bash
+git clone https://github.com/jupiterproject/api.git jupiter-api && cd jupiter-api
+```
 
 2. Install the required dependencies (the project uses Yarn, and we recommend you do so as well)
 
