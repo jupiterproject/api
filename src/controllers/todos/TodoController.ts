@@ -1,5 +1,4 @@
 import express from "express";
-import mongoose from "mongoose";
 import { Todo } from "../../models/Todo";
 import TodoInterface from "./todo.interface";
 
@@ -12,7 +11,7 @@ class TodoController {
   }
 
   public initializeRoutes() {
-    this.router.get(this.path, this.createATodo);
+    this.router.get(this.path, this.createTodo);
     this.router.post(this.path, this.getAllTodos);
   }
 
@@ -20,16 +19,17 @@ class TodoController {
     request: express.Request,
     response: express.Response
   ) => {
-    //  TODO: Add functionality to get all todos
+    response.send("hello world");
   };
 
-  createATodo = (request: express.Request, response: express.Response) => {
+  createTodo = (request: express.Request, response: express.Response) => {
     console.log(request.body);
+    const { name, createdAt, subject, createdBy } = request.body;
     const createdTodo: TodoInterface | any = new Todo({
-      name: "Some Todo",
-      createdAt: "10/14/22",
-      subject: "French",
-      createdBy: "johnDoe",
+      name,
+      createdAt,
+      subject,
+      createdBy,
     });
     createdTodo.save();
     response.json(createdTodo);
